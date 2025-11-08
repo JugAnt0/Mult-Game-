@@ -1,0 +1,21 @@
+import random
+print("Welcome to the mult-game!")
+print("In this game, you will enter a number between 1 - 10.")  
+print("If the number is less than 1 or greater than 10, the program will output the square, cube, fourth power, fifth power, sixth power, seventh power, eighth power, ninth power, and tenth power of that number.")
+while True:
+
+    print("-------START-------")
+    n = int(input("Select a number between 1 - 10"))
+
+    if n > 1 or n < 10:
+        print( n * n, n*n*n, n*n*n*n, n*n*n*n*n, n*n*n*n*n*n, n*n*n*n*n*n*n, n*n*n*n*n*n*n*n, n*n*n*n*n*n*n*n*n, n*n*n*n*n*n*n*n*n*n)
+
+        o = input(" Try again? yes or no: ")
+        if o.lower() == "yes":
+            continue
+        else:
+            print("Thank you for playing the mult-game!")
+            break
+    else:
+        print("Incorrect output, re-enter the number")
+        break
